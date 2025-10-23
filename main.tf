@@ -45,6 +45,10 @@ resource "aws_lambda_function" "this" {
   environment {
     variables = var.lambda_env
   }
+
+  tags = merge(var.tags, {
+    Name = var.name
+  })
 }
 
 resource "aws_lambda_alias" "this" {

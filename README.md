@@ -49,6 +49,7 @@ module "example_lambda" {
 | <a name="input_reserved_concurrent_executions"></a> [reserved\_concurrent\_executions](#input\_reserved\_concurrent\_executions) | Amount of reserved concurrent executions for the lambda function. A value of 0 disables lambda from being triggered and -1 removes any concurrency limitations | `number` | `-1` | no |
 | <a name="input_security_group_ids"></a> [security\_group\_ids](#input\_security\_group\_ids) | (Optional) List of security group IDs to use | `list(string)` | `[]` | no |
 | <a name="input_subnet_ids"></a> [subnet\_ids](#input\_subnet\_ids) | (Optional) List of subnet IDs to use | `list(string)` | `[]` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Tags applied to the lambda function | `map(string)` | `{}` | no |
 | <a name="input_timeout_seconds"></a> [timeout\_seconds](#input\_timeout\_seconds) | Amount of time the Lambda Function has to run in seconds | `number` | `300` | no |
 
 

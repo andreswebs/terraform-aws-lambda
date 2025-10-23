@@ -106,3 +106,9 @@ variable "efs_local_mount_path" {
     error_message = "`efs_local_mount_path` must start with `/mnt/` ."
   }
 }
+
+variable "tags" {
+  type        = map(string)
+  description = "Tags applied to the lambda function"
+  default     = {}
+}
